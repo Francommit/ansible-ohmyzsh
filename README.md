@@ -1,25 +1,22 @@
 OhMyZsh
 =======
 
-[![Build Status](https://travis-ci.org/jebovic/ansible-ohmyzsh.svg?branch=master)](https://travis-ci.org/jebovic/ansible-ohmyzsh) [![Ansible Galaxy](https://img.shields.io/badge/galaxy-jebovic.ohmyzsh-blue.svg?style=flat)](https://galaxy.ansible.com/jebovic/ohmyzsh)
+Setup
+```
+sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get install ssh git ansible -y && git clone https://github.com/Francommit/ansible-ohmyzsh.git
+```
 
-Install and configure Oh My Zsh for multiple users
-
-This role is a part of my [OPS project](https://github.com/jebovic/ops), follow this link to see it in action. OPS provides a lot of stuff, like a vagrant file for development VMs, playbooks for roles orchestration, inventory files, examples for roles configuration, ansible configuration file, and many more.
+Running
+```
+&& sudo ansible-playbook -i hosts setup.yml
+```
 
 Compatibility
 -------------
 
 Tested and approved on :
 
-* Debian jessie (8+)
-* Ubuntu Trusty (14.04 LTS)
-* Ubuntu Xenial (16.04 LTS)
-
-Requirements
-------------
-
-Need zsh to be installed first
+* Debian Stretch WSL
 
 Role Variables
 --------------
